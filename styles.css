@@ -219,11 +219,16 @@ body {
 =========================== */
 
 .venue-image {
-  width: 100%;
-  margin-top: 25px;
-  border-radius: 14px;
   display: block;
-  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.venue-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* ===========================
