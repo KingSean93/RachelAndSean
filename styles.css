@@ -247,65 +247,66 @@ body {
 =========================== */
 
 .directions-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
-  border: 1px solid #7b49b5;
-  border-radius: 999px;
+  margin-top: 28px;
+  padding: 15px 42px;
 
   background: linear-gradient(
     to bottom,
-    #f6ecff 0%,
-    #dcbcff 20%,
-    #b97ff0 50%,
-    #8e56c8 75%,
-    #6d3ea8 100%
+    #fcfaf6 0%,
+    #f4eee2 100%
   );
 
-  color: #fff;
+  border: 1px solid #c9b084;
+  border-radius: 999px;
+
+  color: #76528f;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 13px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.8px;
 
-  /* Bevel effect */
   box-shadow:
-    inset 0 2px 3px rgba(255,255,255,0.9),
-    inset 0 -3px 5px rgba(72,34,116,0.45),
-    0 8px 18px rgba(109,62,168,0.3);
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -2px 4px rgba(170,145,105,.15),
+    0 6px 18px rgba(82,55,116,.12);
 
-  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-
-  transition: all 0.3s ease;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease,
+    color .35s ease;
 }
 
 .directions-btn:hover {
   background: linear-gradient(
     to bottom,
-    #faf5ff 0%,
-    #e6ccff 20%,
-    #ca97f4 50%,
-    #9f67d8 75%,
-    #7a47b8 100%
+    #ffffff,
+    #f7f1e7
   );
 
-  transform: translateY(-2px);
+  color: #5d3a86;
+
+  transform: translateY(-3px);
 
   box-shadow:
-    inset 0 2px 3px rgba(255,255,255,1),
-    inset 0 -3px 5px rgba(72,34,116,0.35),
-    0 12px 24px rgba(109,62,168,0.4);
+    inset 0 1px 0 rgba(255,255,255,1),
+    inset 0 -2px 4px rgba(170,145,105,.18),
+    0 10px 24px rgba(109,62,168,.18);
 }
 
 .directions-btn:active {
   transform: translateY(1px);
 
   box-shadow:
-    inset 0 3px 5px rgba(72,34,116,0.4),
-    inset 0 -1px 2px rgba(255,255,255,0.5),
-    0 4px 8px rgba(109,62,168,0.25);
+    inset 0 3px 6px rgba(0,0,0,.08),
+    0 3px 8px rgba(109,62,168,.12);
 }
 
 /* ===========================
